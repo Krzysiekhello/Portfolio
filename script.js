@@ -1,6 +1,8 @@
 window.addEventListener('DOMContentLoaded', (event) => {
+    // variables for function which handle classes 
     const helloWordElements = document.querySelectorAll("[data-helloWord='helloWordText'] > p");
     const helloWordLetterArray = Array.from(helloWordElements);
+    // function which add class to element when it is under cursors 
     addEventListener("mousemove", helloWordLetterArray.forEach(letter => {
         let letterUnderMouse = null;
         letter.addEventListener("mouseenter", () =>{
@@ -13,11 +15,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
         letterUnderMouse = null;
     })
     )
-
+    // variables for setInterval below 
     const hours = document.querySelector("[data-clock='hours']");
     const minutes = document.querySelector("[data-clock='min']");
     const seconds = document.querySelector("[data-clock='sec']");
-
+    // setInterval which handle clock tips
     setInterval(() => {
         let day = new Date();
         let hr = day.getHours() * 30 
