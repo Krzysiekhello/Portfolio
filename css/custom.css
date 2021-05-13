@@ -12072,23 +12072,25 @@ textarea.form-control-lg {
   top: 50%;
   -webkit-transform: translate(-50%, -90%);
           transform: translate(-50%, -90%);
-  -webkit-transform-origin: top;
-          transform-origin: top;
   border-radius: 20px;
 }
 #clock #hours {
+  left: 50%;
+  top: 20%;
   height: 40px;
   width: 2px;
   background-color: #ff5252;
-  -webkit-transform-origin: -165px 20px;
-          transform-origin: -165px 20px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 #clock #min {
+  left: 50%;
+  top: 10%;
   height: 50px;
   width: 3px;
   background-color: #e0f2f1;
-  -webkit-transform-origin: -7px 25px;
-          transform-origin: -7px 25px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 #clock #sec {
   left: 50%;

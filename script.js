@@ -22,12 +22,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
     // setInterval which handle clock tips
     setInterval(() => {
         let day = new Date();
-        let hr = day.getHours() * 30 
-        let min = day.getMinutes() * 6
-        let sec = day.getSeconds() * 6
-        hours.style.transform = `rotateZ(${(hr)+(min/12)}deg)`
-        minutes.style.transform = `rotateZ(${(min)}deg)`
-        seconds.style.transform = `rotateZ(${(sec)}deg)`
+        let hr = day.getHours() * 30 ;
+        let min = day.getMinutes() * 6;
+        let sec = day.getSeconds() * 6;
+        hours.style.transform = `rotateZ(${(hr)+(min/12)}deg)`;
+        minutes.style.transform = `rotateZ(${(min)}deg)`;
+        seconds.style.transform = `rotateZ(${(sec)}deg)`;
     }, 1000);
-
 });

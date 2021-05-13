@@ -36,7 +36,6 @@
         height: 40px;
     }
 }
-
 @include media-breakpoint-up(lg) {
     #introduction-section {
         height: 100vh;
@@ -46,7 +45,6 @@
         background-size: 130%, 100%;
     }
 }
-
 @keyframes text-pop-up-top {
     0% {
       transform: translateY(0);
