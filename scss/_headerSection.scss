@@ -1,0 +1,62 @@
+#introduction-section {
+    position: relative;
+    height: 100vh;
+    background-image: url("/png/waves2.png");
+    background-repeat: no-repeat;
+    background-position: bottom ;
+    background-size: 300%, 300%;
+    background-color: #00897b;
+    #welcomeElement {
+        width: 80%;
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        transform: translateY(-50%);
+        h1{
+            p {
+                display: inline-block;
+                transition: 0.5s;
+                font-size: 70px;
+                animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                color: #222733;
+            }
+            .activeLetter {
+                font-size: 90px;
+            }
+        }
+    }
+    #introductionText {
+        position: absolute;
+        top: 41%;
+        left: 10%;
+        font-size: 25px;
+        color: #222733;
+    }
+    #separator{
+        height: 40px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    #introduction-section {
+        height: 100vh;
+        background-image: url("/png/waves2.png");
+        background-repeat: no-repeat;
+        background-position: bottom ;
+        background-size: 130%, 100%;
+    }
+}
+
+@keyframes text-pop-up-top {
+    0% {
+      transform: translateY(0);
+      transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      transform: translateY(-50px);
+      transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #455a64, 0 2px 0 #455a64, 0 3px 0 #455a64, 0 4px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 70px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+  
