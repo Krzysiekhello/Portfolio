@@ -1,10 +1,16 @@
-.navbar-dark .navbar-nav li:last-child a  {
-    color: #80deea;
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
-.navbar-dark .navbar-nav li:last-child a:hover  {
+.navbar-dark .navbar-nav li:last-child a {
+    color: $cyanColorForImportantTexts;
+}
+.navbar-dark .navbar-nav li:last-child a:hover {
     color: #e57373;
 }
-.navbar-dark .navbar-nav li:last-child a:focus  {
+.navbar-dark .navbar-nav li:last-child a:focus {
     color: #e57373;
 }
 

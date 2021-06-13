@@ -1,11 +1,11 @@
 #clock {
     position: relative;
-    height: 125px;
-    width: 125px;
+    height: 100px;
+    width: 100px;
     float: right;
-    margin: 20px 20px 0 0;
-    background-image: url("/png/clock.png");
+    background-image: url("../png/clock.png");
     background-size: contain;
+    margin-top: 55px;
     &::before {
         position: absolute;
         left: 50%;
@@ -24,11 +24,10 @@
         top: 50%;
         transform: translate(-50%, -90%);
         border-radius: 20px;
-
     }
     #hours {
         left: 50%;
-        top: 20%;
+        top: 10%;
         height: 40px;
         width: 2px;
         background-color: #ff5252;
@@ -36,31 +35,18 @@
     }
     #min {
         left: 50%;
-        top: 10%;
+        top: 0;
         height: 50px;
         width: 3px;
         background-color: #e0f2f1;
         transform-origin: bottom;
-
     }
     #sec {
         left: 50%;
         top: 0;
-        height: 40px;
+        height: 50px;
         width: 2px;
         background-color: #e0f2f1;
-        transform-origin: 1px 65px;
-    }
-
-}
-@include media-breakpoint-up(lg) {
-    #clock{
-        position: relative;
-        height: 125px;
-        width: 125px;
-        float: right;
-        margin: 40px 60px 0 0;
-        background-image: url("/png/clock.png");
-        background-size: contain;
+        transform-origin: bottom;
     }
 }

@@ -1,0 +1,27 @@
+main {
+    background-color: $mainBlackColor;
+    .aboutMe {
+    background-color: $mainBlackColor;
+    #sectionHeader{
+        color: $cyanColorForImportantTexts;
+        font-family: $quickSandFont;
+        font-size: 30px;
+    }
+    .descriptionSquare {
+        min-height: 300px;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.555);
+        div {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+        @include media-breakpoint-up (lg) {
+            .descriptionSquare {
+            min-height: 150px;
+            }
+        }
+    }
+}
+
