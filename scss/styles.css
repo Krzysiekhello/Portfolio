@@ -10885,7 +10885,6 @@ main .aboutMe .descriptionSquare div {
 }
 
 #skillsSection {
-  min-height: 80vh;
   background-color: #222733;
   font-family: "Quicksand", sans-serif;
 }
@@ -10904,7 +10903,7 @@ main .aboutMe .descriptionSquare div {
   font-size: 40px;
 }
 #skillsSection #skillsContainer p {
-  margin-left: 90px;
+  margin-left: 25%;
 }
 #skillsSection #skillsContainer #skill1 {
   background-image: url("../png/html.png");
@@ -10913,21 +10912,18 @@ main .aboutMe .descriptionSquare div {
   background-image: url("../png/css.png");
 }
 #skillsSection #skillsContainer #skill3 {
-  background-image: url("../png/sass.png");
-  background-position: -20px;
-  background-size: 40%;
-}
-#skillsSection #skillsContainer #skill4 {
   background-image: url("../png/js.png");
 }
-#skillsSection #skillsContainer #skill5 {
+#skillsSection #skillsContainer #skill4 {
   background-image: url("../png/react.png");
+}
+#skillsSection #skillsContainer #skill5 {
+  background-image: url("../png/sass.png");
 }
 #skillsSection #skillsContainer #skill6 {
   background-image: url("../png/bootstrap.png");
 }
 #skillsSection #skillsContainer #skill7 {
-  background-size: 28%;
   background-image: url("../png/materialUi.png");
 }
 #skillsSection #skillsContainer #skill8 {
@@ -10935,6 +10931,26 @@ main .aboutMe .descriptionSquare div {
 }
 #skillsSection #skillsContainer #skill9 {
   background-image: url("../png/photoshop.png");
+}
+
+@media (min-width: 992px) {
+  #skillsSection {
+    min-height: 80vh;
+    background-color: #222733;
+    font-family: "Quicksand", sans-serif;
+  }
+  #skillsSection #skillsHeader {
+    color: #80deea;
+    font-size: 30px;
+  }
+  #skillsSection #skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #skillsSection #skillsContainer .skill {
+    font-size: 40px;
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

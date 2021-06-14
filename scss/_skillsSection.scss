@@ -1,5 +1,4 @@
  #skillsSection {
-     min-height: 80vh;
      background-color: $mainBlackColor;
      font-family: $quickSandFont;
      #skillsHeader {
@@ -18,7 +17,7 @@
              font-size: 40px;
          }
          p {
-             margin-left: 90px;
+             margin-left: 25%;
          }
          #skill1 {
              background-image: url("../png/html.png");
@@ -27,21 +26,18 @@
              background-image: url("../png/css.png");
          }
          #skill3 {
-             background-image: url("../png/sass.png");
-             background-position: -20px;
-             background-size: 40%;
-         }
-         #skill4 {
              background-image: url("../png/js.png");
          }
-         #skill5 {
+         #skill4 {
              background-image: url("../png/react.png");
+         }
+         #skill5 {
+             background-image: url("../png/sass.png");
          }
          #skill6 {
              background-image: url("../png/bootstrap.png");
          }
          #skill7 {
-             background-size: 28%;
              background-image: url("../png/materialUi.png");
          }
          #skill8 {
@@ -49,6 +45,25 @@
          }
          #skill9 {
              background-image: url("../png/photoshop.png");
+         }
+     }
+ }
+ @include media-breakpoint-up(lg) {
+     #skillsSection {
+         min-height: 80vh;
+         background-color: $mainBlackColor;
+         font-family: $quickSandFont;
+         #skillsHeader {
+             color: $cyanColorForImportantTexts;
+             font-size: 30px;
+         }
+         #skillsContainer{
+             display: flex;
+             flex-wrap: wrap;
+             .skill {
+                 font-size: 40px;
+                 width: 30%;
+             }
          }
      }
  }
