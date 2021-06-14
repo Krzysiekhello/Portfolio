@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Quicksand&display=swap");
+.navbar-dark .navbar-nav li:last-child a {
+  color: #80deea;
+}
+
+.navbar-dark .navbar-nav li:last-child a:hover {
+  color: #e57373;
+}
+
+.navbar-dark .navbar-nav li:last-child a:focus {
+  color: #e57373;
+}
+
+#introduction-section {
+  position: relative;
+  height: 60vh;
+  background-image: url("../png/waves2.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 300%, 300%;
+  background-color: #00897b;
+  font-family: "Inter", sans-serif;
+}
+#introduction-section #welcomeElement {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+#introduction-section #welcomeElement div p {
+  display: inline-block;
+  transition: 0.5s;
+  font-size: 100px;
+  color: #222733;
+  animation: text-pop-up-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  font-weight: 500;
+}
+#introduction-section #welcomeElement .activeLetter {
+  font-size: 120px;
+}
+#introduction-section #introductionText {
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  font-size: 25px;
+  color: #222733;
+}
+#introduction-section #separator {
+  height: 40px;
+}
+
+@media (min-width: 992px) {
+  #introduction-section {
+    height: 100vh;
+    background-image: url("../png/waves2.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 130%, 100%;
+  }
+}
+@keyframes text-pop-up-top {
+  0% {
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    transform: translateY(-50px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #455a64, 0 2px 0 #455a64, 0 3px 0 #455a64, 0 4px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 70px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+#clock {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  float: right;
+  background-image: url("../png/clock.png");
+  background-size: contain;
+  margin-top: 55px;
+}
+#clock::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #e0f2f1;
+  border-radius: 50%;
+  z-index: 1;
+}
+#clock #hours, #clock #min, #clock #sec {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -90%);
+  border-radius: 20px;
+}
+#clock #hours {
+  left: 50%;
+  top: 10%;
+  height: 40px;
+  width: 2px;
+  background-color: #ff5252;
+  transform-origin: bottom;
+}
+#clock #min {
+  left: 50%;
+  top: 0;
+  height: 50px;
+  width: 3px;
+  background-color: #e0f2f1;
+  transform-origin: bottom;
+}
+#clock #sec {
+  left: 50%;
+  top: 0;
+  height: 50px;
+  width: 2px;
+  background-color: #e0f2f1;
+  transform-origin: bottom;
+}
+
+main {
+  background-color: #222733;
+}
+main .aboutMe {
+  background-color: #222733;
+}
+main .aboutMe #sectionHeader {
+  color: #80deea;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+}
+main .aboutMe .descriptionSquare {
+  min-height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.555);
+}
+main .aboutMe .descriptionSquare div {
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 992px) {
+  main .aboutMe .descriptionSquare {
+    min-height: 150px;
+  }
+}
+
+#skillsSection {
+  background-color: #222733;
+  font-family: "Quicksand", sans-serif;
+}
+#skillsSection #skillsHeader {
+  color: #80deea;
+  font-size: 30px;
+}
+#skillsSection #skillsContainer .skill {
+  height: 10vh;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.555);
+  background-size: contain;
+  background-position: 5px;
+  background-repeat: no-repeat;
+  font-size: 40px;
+}
+#skillsSection #skillsContainer p {
+  margin-left: 25%;
+}
+#skillsSection #skillsContainer #skill1 {
+  background-image: url("../png/html.png");
+}
+#skillsSection #skillsContainer #skill2 {
+  background-image: url("../png/css.png");
+}
+#skillsSection #skillsContainer #skill3 {
+  background-image: url("../png/js.png");
+}
+#skillsSection #skillsContainer #skill4 {
+  background-image: url("../png/react.png");
+}
+#skillsSection #skillsContainer #skill5 {
+  background-image: url("../png/sass.png");
+}
+#skillsSection #skillsContainer #skill6 {
+  background-image: url("../png/bootstrap.png");
+}
+#skillsSection #skillsContainer #skill7 {
+  background-image: url("../png/materialUi.png");
+}
+#skillsSection #skillsContainer #skill8 {
+  background-image: url("../png/git.png");
+}
+#skillsSection #skillsContainer #skill9 {
+  background-image: url("../png/photoshop.png");
+}
+
+@media (min-width: 992px) {
+  #skillsSection {
+    min-height: 80vh;
+    background-color: #222733;
+    font-family: "Quicksand", sans-serif;
+  }
+  #skillsSection #skillsHeader {
+    color: #80deea;
+    font-size: 30px;
+  }
+  #skillsSection #skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #skillsSection #skillsContainer .skill {
+    font-size: 40px;
+    width: 30%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
