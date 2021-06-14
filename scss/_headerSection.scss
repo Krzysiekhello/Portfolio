@@ -31,6 +31,13 @@
         left: 10%;
         font-size: 25px;
         color: #222733;
+        top: 65%;
+        left: 5%;
+        font-size: 21px;
+        color: $mainBlackColor;
+        #introductionTextHeart {
+            animation: glowingHeart 3s linear infinite alternate;
+        }
     }
     #separator{
         height: 40px;
@@ -39,9 +46,6 @@
 @include media-breakpoint-up(lg) {
     #introduction-section {
         height: 100vh;
-        background-image: url("/png/waves2.png");
-        background-repeat: no-repeat;
-        background-position: bottom ;
         background-size: 130%, 100%;
     }
 }
@@ -57,4 +61,30 @@
       text-shadow: 0 1px 0 #455a64, 0 2px 0 #455a64, 0 3px 0 #455a64, 0 4px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 70px 10px rgba(0, 0, 0, 0.3);
     }
   }
-  
+@keyframes glowingHeart {
+    100% {
+        color: #eee;
+    }
+  }
+@include media-breakpoint-up(lg) {
+    #introduction-section {
+        height: 100vh;
+        background-size: 130%, 100%;
+        #welcomeElement {
+            top: 45%;
+            div {
+                p {
+                    font-size: 100px;
+                }
+            }
+            .activeLetter {
+                font-size: 120px;
+            }
+        }
+        #introductionText {
+            top: 55%;
+            font-size: 30px;
+
+        }
+    }
+}
