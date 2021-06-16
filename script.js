@@ -1,6 +1,17 @@
 window.addEventListener('DOMContentLoaded', () => {
     const helloWordLetterArray = Array.from(document.querySelectorAll("[data-helloText='helloText'] > p"));
 
+    // navigation links
+    const linksArray = Array.from(document.querySelectorAll(".linkList li > a"));
+
+    //function which add class to clicked nav link and remove from other links
+    linksArray.forEach(link => link.addEventListener("click", () => {
+        for (let i = 0; i < linksArray.length ; i++) {
+            linksArray[i].classList.remove("active")
+        }
+        link.classList.add("active")
+    }))
+
     // function which add class to element when it is under cursors
     addEventListener("mousemove", helloWordLetterArray.forEach(letter => {
         let letterUnderMouse = null;
@@ -16,8 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // variables for setInterval below
     const hours = document.querySelector("[data-clock='hours']");
-    const minutes = document.querySelector("[data-clock='min']");
-    const seconds = document.querySelector("[data-clock='sec']");
+    const minutes = document.querySelector("[data-clock='minutes']");
+    const seconds = document.querySelector("[data-clock='seconds']");
 
     // setInterval which handle clock tips
     setInterval(() => {

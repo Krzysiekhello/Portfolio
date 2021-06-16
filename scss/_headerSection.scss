@@ -1,4 +1,4 @@
-#introduction-section {
+#introductionSection {
     position: relative;
     height: 60vh;
     background-image: url("../png/waves2.png");
@@ -30,22 +30,17 @@
         position: absolute;
         top: 65%;
         left: 5%;
-        font-size: 25px;
+        font-size: 21px;
         color: $mainBlackColor;
+        i {
+            animation: glowingHeart 3s linear infinite alternate;
+        }
     }
     #separator {
         height: 40px;
     }
 }
-@include media-breakpoint-up(lg) {
-    #introduction-section {
-        height: 100vh;
-        background-image: url("../png/waves2.png");
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: 130%, 100%;
-    }
-}
+
 @keyframes text-pop-up-top {
     0% {
         transform: translateY(0);
@@ -56,5 +51,42 @@
         transform: translateY(-50px);
         transform-origin: 50% 50%;
         text-shadow: 0 1px 0 #455a64, 0 2px 0 #455a64, 0 3px 0 #455a64, 0 4px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 1px 0 #455a64, 0 70px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+@keyframes glowingHeart {
+    100% {
+        color: #ddd;
+    }
+}
+@include media-breakpoint-up(lg) {
+    #introductionSection {
+        height: 100vh;
+        background-size: 130%, 100%;
+        #welcomeElement {
+            position: absolute;
+            top: 45%;
+            left: 5%;
+            transform: translateY(-50%);
+            div {
+                p {
+                    display: inline-block;
+                    transition: 0.5s;
+                    font-size: 100px;
+                    color: $mainBlackColor;
+                    animation: text-pop-up-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    font-weight: 500;
+                }
+            }
+            .activeLetter {
+                font-size: 120px;
+            }
+        }
+        #introductionText {
+            position: absolute;
+            top: 55%;
+            left: 5%;
+            font-size: 25px;
+            color: $mainBlackColor;
+        }
     }
 }

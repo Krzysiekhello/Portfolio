@@ -1,0 +1,43 @@
+#carouselContainer {
+    position: relative;
+    min-height: 50vh;
+    #projectsHeader {
+        color: #80deea;
+        font-size: 30px;
+    }
+    #carouselExampleCaptions {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .carousel-inner {
+        .carousel-item {
+            img {
+                transform: translateX(50%);
+            }
+            div {
+                color: #fff;
+            }
+            .projectLinks {
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    margin: 0 10px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    #carouselContainer {
+        min-height: 75vh;
+        #projectsHeader {
+        }
+        #carouselExampleCaptions {
+            width: 50%;
+        }
+    }
+}
