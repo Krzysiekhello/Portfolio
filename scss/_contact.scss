@@ -1,0 +1,38 @@
+    #contactSection {
+        height: 100vh;
+        background-color: $mainBlackColor;
+        background-image: url("../png/contactSlice.png");
+        background-position: 35%, 50%;
+        h5 {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            text-align: center;
+        }
+        form {
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #submitButton {
+            background-color: #ff5722;
+            color: #fff;
+        }
+        #snackbar {
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, -50%);
+            height: 40px;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 40px;
+            transition: 0.5s;
+            p:first-child {
+                color: #fff;
+            }
+        }
+    }

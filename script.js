@@ -1,16 +1,14 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const helloWordLetterArray = Array.from(document.querySelectorAll("[data-helloText='helloText'] > p"));
+const helloWordLetterArray = Array.from(document.querySelectorAll("[data-helloText='helloText'] > p"));
+// navigation links
+const linksArray = Array.from(document.querySelectorAll(".linkList li > a"));
 
-    // navigation links
-    const linksArray = Array.from(document.querySelectorAll(".linkList li > a"));
-
-    //function which add class to clicked nav link and remove from other links
-    linksArray.forEach(link => link.addEventListener("click", () => {
-        for (let i = 0; i < linksArray.length ; i++) {
-            linksArray[i].classList.remove("active")
-        }
-        link.classList.add("active")
-    }))
+//function which add class to clicked nav link and remove from other links
+linksArray.forEach(link => link.addEventListener("click", () => {
+    for (let i = 0; i < linksArray.length ; i++) {
+        linksArray[i].classList.remove("active");
+    }
+    link.classList.add("active");
+}))
 
     // function which add class to element when it is under cursors
     addEventListener("mousemove", helloWordLetterArray.forEach(letter => {
@@ -40,4 +38,3 @@ window.addEventListener('DOMContentLoaded', () => {
         minutes.style.transform = `rotateZ(${(min)}deg)`;
         seconds.style.transform = `rotateZ(${(sec)}deg)`;
     }, 1000)
-});

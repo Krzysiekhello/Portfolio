@@ -1,15 +1,18 @@
 #introductionSection {
     position: relative;
-    height: 60vh;
+    height: 100vh;
     background-image: url("../png/waves2.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 300%, 300%;
     background-color: $mainGreenColor;
     font-family: $interFont;
+    #contactLink {
+        color:#ff5722;
+    }
     #welcomeElement {
         position: absolute;
-        top: 55%;
+        top: 40%;
         left: 5%;
         transform: translateY(-50%);
         div {
@@ -28,7 +31,7 @@
     }
     #introductionText {
         position: absolute;
-        top: 65%;
+        top: 47%;
         left: 5%;
         font-size: 21px;
         color: $mainBlackColor;

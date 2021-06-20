@@ -10728,7 +10728,7 @@ textarea.form-control-lg {
 }
 #introductionSection {
   position: relative;
-  height: 60vh;
+  height: 100vh;
   background-image: url("../png/waves2.png");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -10736,9 +10736,12 @@ textarea.form-control-lg {
   background-color: #00897b;
   font-family: "Inter", sans-serif;
 }
+#introductionSection #contactLink {
+  color: #ff5722;
+}
 #introductionSection #welcomeElement {
   position: absolute;
-  top: 55%;
+  top: 40%;
   left: 5%;
   transform: translateY(-50%);
 }
@@ -10755,7 +10758,7 @@ textarea.form-control-lg {
 }
 #introductionSection #introductionText {
   position: absolute;
-  top: 65%;
+  top: 47%;
   left: 5%;
   font-size: 21px;
   color: #222733;
@@ -10821,7 +10824,7 @@ textarea.form-control-lg {
   float: right;
   background-image: url("../png/clock.png");
   background-size: contain;
-  margin-top: 55px;
+  margin-top: 65px;
 }
 #clock::before {
   position: absolute;
@@ -10905,7 +10908,6 @@ main #aboutMe .descriptionSquare div {
 }
 #skillsSection #skillsContainer .skill {
   height: 10vh;
-  width: 80%;
   border-radius: 5px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.555);
   background-size: contain;
@@ -10999,6 +11001,44 @@ main #aboutMe .descriptionSquare div {
   #carouselContainer #carouselExampleCaptions {
     width: 50%;
   }
+}
+#contactSection {
+  height: 100vh;
+  background-color: #222733;
+  background-image: url("../png/contactSlice.png");
+  background-position: 35%, 50%;
+}
+#contactSection h5, #contactSection .h5 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+#contactSection form {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contactSection #submitButton {
+  background-color: #ff5722;
+  color: #fff;
+}
+#contactSection #snackbar {
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  transition: 0.5s;
+}
+#contactSection #snackbar p:first-child {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
